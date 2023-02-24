@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title>Lab2_1</title>
+<style>
+    #user {
+     width: 1200px; /* Ширина поля в пикселах */
+     height: 1200px;
+    }
+    .State_margin{ margin-left:146px; }
+    .Zip_margin{ margin-left:192px; }
+    .Country_margin{ margin-left:230px; }
+    .Email_margin{ margin-left:140px; }
+    .Reset_margin{ margin-left:660px; }
+   </style>
+<form action="#" class="form">
+	<div>
+        <p>
+            <small>ID Number:</small>
+        </p>    
+            <input type="text" name="number" placeholder="" required size = "30"/>
+    </div>
+ 
+	<div>
+        <p>
+            <small>Legal name:</small>
+        </p>  
+        <input type="text" name="name" placeholder="" size="108" />
+    </div>
+ 
+	<div>
+        <p>
+            <small>Address 1:</small>
+        </p> 
+        <input type="text" name="adres1" placeholder="" size="108" />
+    </div>
+ 
+	<div>
+        <p>
+            <small>Address 2:</small>
+        </p> 
+        <input type="text" name="adres2" placeholder="" size="108" />
+    </div>
+ 
+    <div>
+        <p>
+            <small>City:</small> 
+            <small class="State_margin">State:</small>
+            <small class="Zip_margin">Zip:</small>
+            <small class="Country_margin">Country:</small>
+        </p> 
+        <input type="text" name="city" placeholder="" size="20" />
+        <input type="text" name="state" placeholder="" size="27" />
+        <input type="text" name="zip" placeholder="" size="33" />
+        <select name="country">
+             <option value="r1" >United States</option>
+             <option value="r2" >Japan</option>
+             <option value="r3" >China</option>
+             <option value="r4" >Russia</option>
+             <option value="r5" >Ukraine</option>
+        </select>
+    </div>
+ 
+    <div>
+        <p>
+            <small>Phone:</small> 
+            <small class="Email_margin">Email::</small>
+        </p> 
+        <input type="text" name="phone" placeholder="" size="20"  />
+        <input type="email" name="email" placeholder="" size="82" />
+    </div>
+ 
+ 
+	<div>
+        <p>
+            <button type="submit" class="Reset_margin">Reset</button>
+            <button type="submit">Sumbit</button>
+        </p>
+    </div>
+ 
+</form>
+</html>
